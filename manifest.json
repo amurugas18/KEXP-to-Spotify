@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "KEXP to Spotify",
+    "version": "1.1",
+	"action": {
+		"default_popup": "popup.html",
+		"default_icon": {
+		"16": "icons/icon16.png",
+		"48": "icons/icon48.png",
+		"128": "icons/icon128.png"
+		}
+	},
+    "permissions": [
+        "identity"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "oauth2": {
+		"client_id": "53a778c860184dbbbd0c4b33fa86a4e0",
+		"scopes": ["user-read-email", "playlist-modify-public"],
+		"redirect_uri": "https://opjkndnodhpcjikfkdeglddfenfgaoan.chromiumapp.org/callback"
+    }
+}
